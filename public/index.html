@@ -10,7 +10,15 @@
   </head>
 
   <body>
-    <h1>{{.Title}}</h1>  
+    <h1>{{.Title}}</h1>
+    <div class="form-wrapper">
+      <form action="/todo" method="post">
+        <input type="checkbox" name="completed">
+        <input type="text" placeholder="Content" name="content">
+        <input type="text" placeholder="Due" name="due">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </body>
 
 </html>
